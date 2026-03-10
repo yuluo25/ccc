@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# 临时音频文件
+*.m4a
+*.mp3
+
+# 环境变量
+.env
+.env.local
+
+# HTTP 缓存
+data/.fetch_cache.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

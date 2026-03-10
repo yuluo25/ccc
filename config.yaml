@@ -1,0 +1,31 @@
+# 小宇宙播客 AI 分析工具配置
+
+podcast:
+  id: "68b8197aad2ca29a39848ea3"
+  name: "CC股事会"
+  url: "https://www.xiaoyuzhoufm.com/podcast/68b8197aad2ca29a39848ea3"
+
+analysis:
+  # 每次最多处理的新集数
+  max_episodes_per_run: 3
+  # 过滤掉时长小于此值（秒）的集
+  min_duration_seconds: 60
+  # Gemini 模型
+  model: "gemini-2.5-flash"
+
+prompt: |
+  你是一位专业的财经分析师。请仔细听这段播客音频，然后提供以下分析：
+
+  1. **摘要**：用3-5句话概括本期内容
+  2. **关键要点**：提取5-10个核心观点或信息点
+  3. **投资标的**：提到的具体股票、基金、行业或资产类别，以及讨论的上下文
+  4. **风险提示**：主播提到的风险因素或需要注意的事项
+  5. **市场展望**：整体基调是看涨(bullish)、看跌(bearish)还是中性(neutral)
+  6. **目标受众**：这期内容适合什么样的投资者
+
+  请用中文回答，保持客观专业的语气。
+
+site:
+  title: "CC股事会 - AI 播客分析"
+  description: "使用 AI 自动分析财经播客内容，提取关键要点和投资信息"
+  base_url: ""  # GitHub Pages 部署后可设为仓库路径
