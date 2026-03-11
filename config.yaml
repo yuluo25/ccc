@@ -11,7 +11,7 @@ analysis:
   # 过滤掉时长小于此值（秒）的集
   min_duration_seconds: 60
   # Gemini 模型
-  model: "gemini-2.5-flash"
+  model: "gemini-3-flash-preview"
 
 prompt: |
   你是一位专业的财经分析师。请仔细听这段播客音频，然后提供以下分析：
